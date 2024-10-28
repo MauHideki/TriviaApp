@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001445"
+    tools:context=".Opciones">
+
+    <TextView
+        android:id="@+id/txtSeleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECCIONA EL DEPORTE"
+        android:textColor="#00C853"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Button
+        android:id="@+id/btnAmericano"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:text="Futbol Americano"
+        app:layout_constraintEnd_toStartOf="@+id/btnSoccer"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAmericano" />
+
+    <Button
+        android:id="@+id/btnSoccer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        android:text="Futbol Soccer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSoccer" />
+
+    <Button
+        android:id="@+id/btnBaseball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
+        android:text="Baseball"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBaseball"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/btnBasketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:text="Basketball"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnBaseball"
+        app:layout_constraintTop_toBottomOf="@+id/imgBasketball"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgBaseball"
+        android:layout_width="144dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmericano"
+        app:srcCompat="@drawable/baseball" />
+
+    <ImageView
+        android:id="@+id/imgBasketball"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgBaseball"
+        app:layout_constraintTop_toBottomOf="@+id/btnSoccer"
+        app:srcCompat="@drawable/basketball" />
+
+    <ImageView
+        android:id="@+id/imgSoccer"
+        android:layout_width="155dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeleccion"
+        app:srcCompat="@drawable/soccer" />
+
+    <ImageView
+        android:id="@+id/imgAmericano"
+        android:layout_width="141dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgSoccer"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeleccion"
+        app:srcCompat="@drawable/americano" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
