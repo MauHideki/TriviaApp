@@ -4,12 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class BasketballQ1 extends AppCompatActivity {
+    private int [] imagenesPreguntas={
+        R.drawable.jordan,
+        R.drawable.equiposnba,
+        R.drawable.triple,
+        R.drawable.anotadores,
+        R.drawable.olimpico
+    };
     private String[] questions = {
             "¿Cuantos campeonatos de la NBA ha ganado Michael Jordan?",
             "¿Que equipo tiene mas titulos en la historia de la NBA?",
@@ -39,6 +47,7 @@ public class BasketballQ1 extends AppCompatActivity {
     private RadioGroup answersGroup;
     private TextView resultText;
     private Button nextButton;
+    private ImageView imagePregunta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,7 @@ public class BasketballQ1 extends AppCompatActivity {
         answersGroup = findViewById(R.id.respuestas_group);
         resultText = findViewById(R.id.result_text);
         nextButton = findViewById(R.id.next_button);
+        imagePregunta = findViewById(R.id.image_pregunta);
 
         // Esta función muestra la primera pregunta
         setQuestion();
@@ -75,6 +85,9 @@ public class BasketballQ1 extends AppCompatActivity {
         answer2.setText(answers[currentQuestion][1]);
         answer3.setText(answers[currentQuestion][2]);
         answer4.setText(answers[currentQuestion][3]);
+
+        //Cambia la imagen de la pregunta actual
+        imagePregunta.setImageResource(imagenesPreguntas[currentQuestion]);
 
         // Limpiar selección anterior (debemos limpiar el grupo)
         answersGroup.clearCheck();
