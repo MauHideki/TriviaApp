@@ -15,9 +15,9 @@ public class SoccerQ1 extends AppCompatActivity {
             R.drawable.soccerq1,
             R.drawable.finalessoccer,
             R.drawable.delanteros,
-            //R.drawable.
-            //R.drawable.
-            //R.drawable.
+            R.drawable.finalchampions,
+            R.drawable.logobarca
+
     };
     private String [] questions = {
             "¿En qué año se celebró la primera Copa Mundial de la FIFA?",
