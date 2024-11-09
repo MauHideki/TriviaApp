@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class SoccerQ1 extends AppCompatActivity {
     private int [] imagenesPreguntas = {
             R.drawable.soccerq1,
-            R.drawable.finalessoccer,
+            R.drawable.trofeocopamundial,
             R.drawable.delanteros,
             R.drawable.finalchampions,
             R.drawable.logobarca
