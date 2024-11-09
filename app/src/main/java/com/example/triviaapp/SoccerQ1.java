@@ -4,12 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class SoccerQ1 extends AppCompatActivity {
+    private int [] imagenesPreguntas = {
+            R.drawable.soccerq1,
+            R.drawable.finalessoccer,
+            R.drawable.delanteros,
+            //R.drawable.
+            //R.drawable.
+            //R.drawable.
+    };
     private String [] questions = {
             "¿En qué año se celebró la primera Copa Mundial de la FIFA?",
             "¿Qué país ha ganado más Copas del Mundo?",
@@ -39,6 +48,7 @@ public class SoccerQ1 extends AppCompatActivity {
     private RadioGroup answersGroup;
     private TextView resultText;
     private Button nextButton;
+    private ImageView imagePregunta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +60,7 @@ public class SoccerQ1 extends AppCompatActivity {
         answersGroup=findViewById(R.id.respuestas_group);
         resultText=findViewById(R.id.result_text);
         nextButton=findViewById(R.id.next_button);
+        imagePregunta=findViewById(R.id.image_pregunta);
 
         //Esta funcion muestra la primera pregunta
         setQuestion();
@@ -75,6 +86,9 @@ public class SoccerQ1 extends AppCompatActivity {
         answer2.setText(answers[currentQuestion][1]);
         answer3.setText(answers[currentQuestion][2]);
         answer4.setText(answers[currentQuestion][3]);
+
+        //Cambia la imagen de la pregunta actual
+        imagePregunta.setImageResource(imagenesPreguntas[currentQuestion]);
 
         //Limpiar seleccion anterior (se debe de limpiar el grupo)
         answersGroup.clearCheck();

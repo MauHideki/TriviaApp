@@ -4,18 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class AmericanoQ1 extends AppCompatActivity {
+    private int [] imagenesPreguntas = {
+            R.drawable.superbowl,
+            R.drawable.sblvi,
+            //R.drawable.historia,
+            R.drawable.ofensiva,
+            //R.drawable.wins
+    };
     private String [] questions = {
-      "¿Cuántos Super Bowls ha ganado Tom Brady?",
-      "¿Qué equipo ganó el Super Bowl en 2022 (temporada 2021)?",
-      "¿En qué año se jugó el primer Super Bowl?",
-      "¿Cuántos jugadores tiene un equipo de fútbol americano en el campo?",
-      "¿Qué equipo ha ganado más Super Bowls en la historia de la NFL?"
+            "¿Cuántos Super Bowls ha ganado Tom Brady?",
+            "¿Qué equipo ganó el Super Bowl en 2022 (temporada 2021)?",
+            "¿En qué año se jugó el primer Super Bowl?",
+            "¿Cuántos jugadores tiene un equipo de fútbol americano en el campo?",
+            "¿Qué equipo ha ganado más Super Bowls en la historia de la NFL?"
     };
     private String[][] answers ={
             {"5", "6", "7", "8"},
@@ -39,6 +47,7 @@ public class AmericanoQ1 extends AppCompatActivity {
     private RadioGroup answersGroup;
     private TextView resultText;
     private Button nextButton;
+    private ImageView imagePregunta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,7 @@ public class AmericanoQ1 extends AppCompatActivity {
         answersGroup=findViewById(R.id.respuestas_group);
         resultText=findViewById(R.id.result_text);
         nextButton=findViewById(R.id.next_button);
+        imagePregunta=findViewById(R.id.image_pregunta);
 
         //Esta funcion muestra la primera pregunta
         setQuestion();
@@ -75,6 +85,9 @@ public class AmericanoQ1 extends AppCompatActivity {
         answer2.setText(answers[currentQuestion][1]);
         answer3.setText(answers[currentQuestion][2]);
         answer4.setText(answers[currentQuestion][3]);
+
+        //Cambia la imagen de la pregunta actual
+        imagePregunta.setImageResource(imagenesPreguntas[currentQuestion]);
 
         //Limpiar seleccion anterior (se debe de limpiar el grupo)
         answersGroup.clearCheck();
