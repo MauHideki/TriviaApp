@@ -16,7 +16,7 @@ public class BasketballQ1 extends AppCompatActivity {
         R.drawable.equiposnba,
         R.drawable.triple,
         R.drawable.anotadores,
-        R.drawable.olimpico
+        R.drawable.paris
     };
     private String[] questions = {
             "¿Cuantos campeonatos de la NBA ha ganado Michael Jordan?",
