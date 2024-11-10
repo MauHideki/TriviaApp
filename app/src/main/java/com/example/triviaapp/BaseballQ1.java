@@ -4,12 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class BaseballQ1 extends AppCompatActivity {
+    private int [] imagesPreguntas={
+            //R.drawable,
+            //R.drawable,
+            //R.drawable,
+            //R.drawable,
+            //R.drawable
+    };
     private String[] questions = {
             "¿Qué equipo ha ganado más Series Mundiales en la historia de la MLB?",
             "¿Cuántas bases hay en un campo de béisbol?",
@@ -39,6 +47,7 @@ public class BaseballQ1 extends AppCompatActivity {
     private RadioGroup answersGroup;
     private TextView resultText;
     private Button nextButton;
+    private ImageView imagePregunta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,7 @@ public class BaseballQ1 extends AppCompatActivity {
         answersGroup = findViewById(R.id.respuestas_group);
         resultText = findViewById(R.id.result_text);
         nextButton = findViewById(R.id.next_button);
+        imagePregunta = findViewById(R.id.image_pregunta);
 
         // Esta función muestra la primera pregunta
         setQuestion();
@@ -75,6 +85,9 @@ public class BaseballQ1 extends AppCompatActivity {
         answer2.setText(answers[currentQuestion][1]);
         answer3.setText(answers[currentQuestion][2]);
         answer4.setText(answers[currentQuestion][3]);
+
+        //Cambia la imagen de la pregunta actual.
+        imagePregunta.setImageResource(imagesPreguntas[currentQuestion]);
 
         // Limpiar selección anterior (debemos limpiar el grupo)
         answersGroup.clearCheck();

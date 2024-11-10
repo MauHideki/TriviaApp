@@ -12,7 +12,7 @@
         android:text="Pregunta 1: ¿Cuantos campeonatos de la NBA ha ganado Michael Jordan?"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
         android:layout_marginBottom="8dp"/>
 
@@ -69,7 +69,8 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Siguiente" />
+        android:text="Siguiente"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/result_text"
