@@ -12,11 +12,11 @@ import android.widget.Toast;
 
 public class BaseballQ1 extends AppCompatActivity {
     private int [] imagesPreguntas={
-            //R.drawable,
-            //R.drawable,
-            //R.drawable,
-            //R.drawable,
-            //R.drawable
+            R.drawable.seriemundial,
+            R.drawable.bases,
+            R.drawable.lider,
+            R.drawable.primerserie,
+            R.drawable.innings
     };
     private String[] questions = {
             "¿Qué equipo ha ganado más Series Mundiales en la historia de la MLB?",
