@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:text="Pregunta 1: ¿Cuantos campeonatos de la NBA ha ganado Michael Jordan?"
         android:gravity="center"
+        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:textSize="20sp"
         android:textColor="@color/white"

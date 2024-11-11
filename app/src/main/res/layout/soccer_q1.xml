@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:text="Pregunta 1: ¿En qué año se celebró la primera Copa Mundial de la FIFA?"
         android:gravity="center"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:textStyle="bold"
         android:textSize="25sp"
         android:textColor="@color/white"
         android:layout_marginBottom="8dp"/>
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="1930"
             android:textColor="@color/white"
-            android:textSize="25sp"/>
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/respuesta2"
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="1942"
             android:textColor="@color/white"
-            android:textSize="25sp"/>
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/respuesta3"
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="1950"
             android:textColor="@color/white"
-            android:textSize="25sp"/>
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/respuesta4"
@@ -62,7 +63,7 @@
             android:layout_height="wrap_content"
             android:text="1966"
             android:textColor="@color/white"
-            android:textSize="25sp"/>
+            android:textSize="20sp"/>
     </RadioGroup>
 
     <Button
@@ -78,6 +79,6 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="#FF0000"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:visibility="gone" />
 </LinearLayout>

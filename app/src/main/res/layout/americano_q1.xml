@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,12 +9,13 @@
         android:id="@+id/pregunta_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta 1: ¿Cuántos Super Bowls ha ganado Tom Brady?"
-        android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:textSize="25sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Pregunta 1: ¿Cuántos Super Bowls ha ganado Tom Brady?"
         android:textColor="@color/white"
-        android:layout_marginBottom="8dp"/>
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/image_pregunta"
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="5"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/respuesta2"
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="6"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/respuesta3"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="7"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/respuesta4"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:text="8"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
     </RadioGroup>
 
     <Button
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Siguiente" />
+        android:text="Siguiente"/>
 
     <TextView
         android:id="@+id/result_text"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="#FF0000"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:visibility="gone" />
 
 </LinearLayout>
