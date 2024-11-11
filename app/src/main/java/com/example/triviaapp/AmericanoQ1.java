@@ -14,9 +14,9 @@ public class AmericanoQ1 extends AppCompatActivity {
     private int [] imagenesPreguntas = {
             R.drawable.superbowl,
             R.drawable.sblvi,
-            //R.drawable.historia,
+            R.drawable.primersb,
             R.drawable.ofensiva,
-            //R.drawable.wins
+            R.drawable.massb
     };
     private String [] questions = {
             "¿Cuántos Super Bowls ha ganado Tom Brady?",
