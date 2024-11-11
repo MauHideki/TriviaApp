@@ -27,7 +27,7 @@
         android:id="@+id/respuestas_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="left"
         android:orientation="vertical"
         android:layout_marginBottom="8dp">
 
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Los Angeles Dodgers"
             android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/respuesta2"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:text="Boston Red Sox"
             android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/respuesta3"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:text="New York Yankees "
             android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:textSize="20sp"/>
 
         <RadioButton
             android:id="@+id/respuesta4"
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:text="Chicago Cubs"
             android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:textSize="20sp"/>
     </RadioGroup>
 
     <Button
@@ -79,5 +79,5 @@
         android:text=""
         android:textColor="#FF0000"
         android:textSize="16sp"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 </LinearLayout>
