@@ -12,7 +12,7 @@
         android:text="Pregunta 1: ¿Qué equipo ha ganado más Series Mundiales en la historia de la MLB?"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:textSize="22sp"
+        android:textSize="21sp"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginBottom="8dp"/>

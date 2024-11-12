@@ -15,7 +15,7 @@
         android:textStyle="bold"
         android:text="Pregunta 1: ¿Cuántos Super Bowls ha ganado Tom Brady?"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="21sp" />
 
     <ImageView
         android:id="@+id/image_pregunta"
