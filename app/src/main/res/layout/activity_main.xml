@@ -3,26 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/fondobienvenida"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#001445"
     tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#001445"
         android:backgroundTint="#001445"
         android:text="TRIVIA APP"
-        android:textColor="#00C853"
+        android:textColor="#FFFCFC"
         android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="0.208" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,11 +40,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="124dp"
+        android:backgroundTint="#FDFAFA"
+        android:shadowColor="#4CAF50"
         android:text="INICIAR"
+        android:textColor="#03A9F4"
+        android:textColorHighlight="#4CAF50"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#4CAF50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
