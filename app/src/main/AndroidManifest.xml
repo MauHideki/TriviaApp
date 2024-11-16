@@ -17,21 +17,11 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".BasketballQ1"
-            android:exported="false" />
-        <activity
-            android:name=".americanoQ4"
-            android:exported="false" />
-        <activity
-            android:name=".AmericanoQ3"
-            android:exported="false" />
-        <activity
-            android:name=".AmericanoQ2"
             android:exported="false" />
         <activity
             android:name=".BaseballQ1"

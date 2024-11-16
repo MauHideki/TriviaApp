@@ -1,0 +1,63 @@
+Index: app/src/main/res/layout/activity_splash_screen.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/main\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".splashScreen\">\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_splash_screen.xml b/app/src/main/res/layout/activity_splash_screen.xml
+--- a/app/src/main/res/layout/activity_splash_screen.xml	(revision 4d59660dc49f7a2c5d3cc80dd3e27d691bb50878)
++++ b/app/src/main/res/layout/activity_splash_screen.xml	(date 1731791333049)
+@@ -1,10 +1,7 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:id="@+id/main"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".splashScreen">
++<?xml version="1.0" encoding="utf-8"?
++<androidx.appcompat.widget.LinearLayoutCompat
++    xnl
++    layout_width=""
++    layout_height=""
+ 
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
++    />
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.TriviaApp\"\r\n        tools:targetApi=\"31\">\r\n        <activity\r\n            android:name=\".splashScreen\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".BasketballQ1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".americanoQ4\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".AmericanoQ3\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".AmericanoQ2\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".BaseballQ1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".SoccerQ1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".AmericanoQ1\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Opciones\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 4d59660dc49f7a2c5d3cc80dd3e27d691bb50878)
++++ b/app/src/main/AndroidManifest.xml	(date 1731547045910)
+@@ -17,7 +17,6 @@
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+-
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+@@ -25,15 +24,6 @@
+             android:name=".BasketballQ1"
+             android:exported="false" />
+         <activity
+-            android:name=".americanoQ4"
+-            android:exported="false" />
+-        <activity
+-            android:name=".AmericanoQ3"
+-            android:exported="false" />
+-        <activity
+-            android:name=".AmericanoQ2"
+-            android:exported="false" />
+-        <activity
+             android:name=".BaseballQ1"
+             android:exported="false" />
+         <activity
