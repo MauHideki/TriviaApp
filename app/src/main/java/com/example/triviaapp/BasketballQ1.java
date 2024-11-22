@@ -134,5 +134,6 @@ public class BasketballQ1 extends AppCompatActivity {
         questionText.setText(resultSummary.toString()); // Muestra el resumen en el TextView
         answersGroup.setVisibility(View.GONE); // Oculta el RadioGroup de respuestas
         nextButton.setVisibility(View.GONE); // Oculta el botón de siguiente
+        imagePregunta.setVisibility(View.VISIBLE);
     }
 }

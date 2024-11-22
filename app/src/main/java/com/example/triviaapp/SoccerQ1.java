@@ -135,5 +135,6 @@ public class SoccerQ1 extends AppCompatActivity {
         questionText.setText(resultSummary.toString()); //Muestra el resultado
         answersGroup.setVisibility(View.GONE); // Oculta el RadioGroup de respuestas
         nextButton.setVisibility(View.GONE); // Oculta el boton de siguiente
+        imagePregunta.setVisibility(View.VISIBLE);
     }
 }
