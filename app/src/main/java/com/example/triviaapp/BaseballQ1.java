@@ -134,6 +134,6 @@ public class BaseballQ1 extends AppCompatActivity {
         questionText.setText(resultSummary.toString()); // Muestra el resumen en el TextView
         answersGroup.setVisibility(View.GONE); // Oculta el RadioGroup de respuestas
         nextButton.setVisibility(View.GONE);
-        imagePregunta.setVisibility(View.VISIBLE);
+        imagePregunta.setImageResource(R.drawable.ohtani);
     }
 }

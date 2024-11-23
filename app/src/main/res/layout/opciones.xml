@@ -6,7 +6,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondoopciones"
+    android:background="@drawable/opfon"
     tools:context=".Opciones">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text="SELECCIONA EL DEPORTE"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +29,8 @@
         android:layout_height="53dp"
         android:layout_marginTop="32dp"
         android:text="Futbol Americano"
+        android:backgroundTint="#FDFAFA"
+        android:textColor="#03A9F4"
         app:layout_constraintEnd_toStartOf="@+id/btnSoccer"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,9 +40,11 @@
         android:id="@+id/btnSoccer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#FDFAFA"
         android:text="Futbol Soccer"
+        android:textColor="#03A9F4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgSoccer" />
 
@@ -50,6 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#FDFAFA"
+        android:textColor="#03A9F4"
         android:text="Baseball"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +68,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="56dp"
+        android:backgroundTint="#FDFAFA"
         android:text="Basketball"
+        android:textColor="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -75,7 +83,7 @@
         android:layout_width="144dp"
         android:layout_height="152dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAmericano"
         app:srcCompat="@drawable/baseball" />

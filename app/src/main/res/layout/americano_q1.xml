@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/americanofondo"
-    android:padding="16dp">
+    android:padding="25dp">
 
     <TextView
         android:id="@+id/pregunta_text"
@@ -72,7 +72,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Siguiente"/>
+        android:text="Siguiente"
+        android:backgroundTint="#FDFAFA"
+        android:textColor="#03A9F4"/>
 
     <TextView
         android:id="@+id/result_text"
